@@ -1,27 +1,44 @@
-# Login
+# Login using AWS Cognito in Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+## Overview
+This project demonstrates how to integrate AWS Cognito authentication into an Angular application. It covers user registration and login functionalities using AWS Cognito services.
 
-## Development server
+## Features
+- User Registration
+- User Login
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies Used
+- Angular
+- AWS Cognito
+- TypeScript
+- HTML/CSS
 
-## Code scaffolding
+## Prerequisites
+Before running this project, ensure you have the following installed:
+- Node.js
+- Angular CLI
+- AWS Account with Cognito configured
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+### AWS Cognito Setup
+1. **Create a Cognito User Pool:**
+   - Sign in to the [AWS Management Console](https://aws.amazon.com/console/).
+   - Open the Amazon Cognito console.
+   - Choose "Manage User Pools" and then "Create a User Pool".
+   - Follow the steps to configure your user pool. Make note of the User Pool ID and App Client ID.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **Configure App Client:**
+   - In the Cognito User Pool, go to "App clients" and create a new app client if you don't have one.
+   - Ensure you enable the "Enable sign-in API for server-based authentication" option.
 
-## Running unit tests
+### Clone the Repository
+```bash
+git clone https://github.com/your-username/login-using-AWSCognito-Angular.git
+cd login-using-AWSCognito-Angular
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Acknowledgements
+Thanks to the AWS and Angular communities for their excellent documentation and support
