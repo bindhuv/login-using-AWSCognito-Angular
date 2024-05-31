@@ -1,0 +1,83 @@
+.login {
+    &Wrapper {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        height: 100vh;
+        background: url(../assets/bg.jpg) no-repeat center;
+        background-size: cover;
+    }
+    &Container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        backdrop-filter: blur(8px);
+    }
+    &Card {
+        width: 500px;
+        min-height: 400px;
+        background: #1c1c22;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        border-radius: 24px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #1c1c22 0px 0px 0px 3px;
+        padding: 28px;
+        .nav-tabs {
+            border: none;
+            gap: 8px;
+        }
+        .nav-link {
+            color: #fff;
+            padding: 8px 20px;
+            background: transparent;
+            border-radius: none;
+            border: none;
+            font-size: 20px;
+            font-weight: 500;
+            border-bottom: 4px solid transparent;
+            &.active {
+                border-radius: 4px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                border-bottom: 4px solid #f9b177;
+            }
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            margin-top: 60px;
+        }
+        &-title {
+            font-size: 48px;
+            font-weight: 300;
+        }
+        &-form {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            .btn {
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+        &-input {
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            gap: 8px;
+            color: #fff;
+            input {
+                width: 100%;
+                min-height: 50px;
+                border-radius: 8px;
+                border: 1px solid #fff;
+                background: transparent;
+                padding: 8px 16px;
+                font-size: 16px;
+            }
+        }
+    }
+}
